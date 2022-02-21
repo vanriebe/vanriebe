@@ -1,0 +1,52 @@
+/* General body and text formatting */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: white;
+  color: black;
+  font-family: Lato, sans serif;
+  padding: 20;
+  margin: 20;
+}
+
+
+/* Some responsive design tweaks */
+@media (min-width: 576px) {
+  .wrapper {
+    max-width: 576px;
+    margin: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 576px;
+    margin: auto;
+  }
+}
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
+
+/* The real design tweaking */
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+h1 {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+.logo-container {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.logo-container img {
+  object-fit: cover;
+  max-width: 100%;
+}
