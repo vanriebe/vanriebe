@@ -39,14 +39,35 @@ h1 {
   text-align: center;
 }
 p {
-  text-align: center;
+}
+.company-name {
+  font-weight: bold;
+  font-variant: small-caps;
 }
 .logo-container {
   min-width: 0;
   overflow: hidden;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
-
 .logo-container img {
+  display: block;
   object-fit: cover;
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.contact-container {
+  display: grid;
+  grid-template-columns:  auto auto;
+  gap: 20px;
+}
+div.contact {
+  display: inline-grid;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+div.contact .name {
+  font-weight: bold;
 }
