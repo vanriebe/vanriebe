@@ -32,42 +32,30 @@ body {
 
 /* The real design tweaking */
 .wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
 }
 h1 {
   text-align: center;
 }
 p {
 }
-.company-name {
-  font-weight: bold;
-  font-variant: small-caps;
+.banner {
+  display: flex;
+  justify-content: center;
 }
-.logo-container {
-  min-width: 0;
-  overflow: hidden;
-  margin-top: 1em;
-  margin-bottom: 1em;
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.logo-container img {
-  display: block;
-  object-fit: cover;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-div.contact-container {
-  display: grid;
-  grid-template-columns:  auto auto;
-  gap: 20px;
-}
-div.contact {
-  display: inline-grid;
+
+.center {
   text-align: center;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin: 1em;
 }
-div.contact .name {
+
+.name {
   font-weight: bold;
+}
+.small-caps {
+  font-variant: small-caps;
 }
